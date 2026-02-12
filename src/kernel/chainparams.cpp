@@ -464,10 +464,10 @@ class CTestNet4Params : public CChainParams {
             "000000000000000180a58e7fa3b0db84b5ea76377524894f53660d93ac839d"
             "9b"};  // 91000
 
-        pchMessageStart[0] = 0x1c;
-        pchMessageStart[1] = 0x16;
-        pchMessageStart[2] = 0x3f;
-        pchMessageStart[3] = 0x28;
+        pchMessageStart[0] = 0x52;
+        pchMessageStart[1] = 0x53;
+        pchMessageStart[2] = 0x12;
+        pchMessageStart[3] = 0x87;
         nDefaultPort = 48333;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 22;
@@ -736,10 +736,10 @@ class CRegTestParams : public CChainParams {
         consensus.nMinimumChainWork = uint256{};
         consensus.defaultAssumeValid = uint256{};
 
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
+        pchMessageStart[0] = 0xc0;
+        pchMessageStart[1] = 0x2c;
+        pchMessageStart[2] = 0x03;
+        pchMessageStart[3] = 0x15;
         nDefaultPort = 18444;
         nPruneAfterHeight = opts.fastprune ? 100 : 1000;
         m_assumed_blockchain_size = 0;
