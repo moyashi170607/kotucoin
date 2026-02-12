@@ -164,7 +164,7 @@ class CMainParams : public CChainParams {
         pchMessageStart[1] = 0xbe;
         pchMessageStart[2] = 0xb4;
         pchMessageStart[3] = 0xd9;
-        nDefaultPort = 8333;
+        nDefaultPort = 52533;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 810;
         m_assumed_chain_state_size = 14;
@@ -337,7 +337,7 @@ class CTestNetParams : public CChainParams {
         pchMessageStart[1] = 0x11;
         pchMessageStart[2] = 0x09;
         pchMessageStart[3] = 0x07;
-        nDefaultPort = 18333;
+        nDefaultPort = 52633;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 240;
         m_assumed_chain_state_size = 19;
@@ -468,7 +468,7 @@ class CTestNet4Params : public CChainParams {
         pchMessageStart[1] = 0x53;
         pchMessageStart[2] = 0x12;
         pchMessageStart[3] = 0x87;
-        nDefaultPort = 48333;
+        nDefaultPort = 52733;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 22;
         m_assumed_chain_state_size = 2;
@@ -643,7 +643,7 @@ class SigNetParams : public CChainParams {
         uint256 hash = h.GetHash();
         std::copy_n(hash.begin(), 4, pchMessageStart.begin());
 
-        nDefaultPort = 38333;
+        nDefaultPort = 52833;
         nPruneAfterHeight = 1000;
 
         genesis =
@@ -740,7 +740,7 @@ class CRegTestParams : public CChainParams {
         pchMessageStart[1] = 0x2c;
         pchMessageStart[2] = 0x03;
         pchMessageStart[3] = 0x15;
-        nDefaultPort = 18444;
+        nDefaultPort = 52933;
         nPruneAfterHeight = opts.fastprune ? 100 : 1000;
         m_assumed_blockchain_size = 0;
         m_assumed_chain_state_size = 0;
