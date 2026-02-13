@@ -30,7 +30,7 @@ GENERATE_OPTIONS = {
     "fuzz": [
         "-DVCPKG_MANIFEST_NO_DEFAULT_FEATURES=ON",
         "-DVCPKG_MANIFEST_FEATURES=wallet",
-        "-DBUILD_GUI=OFF",
+        "-DBUILD_GUI=ON",
         "-DWITH_ZMQ=OFF",
         "-DBUILD_FOR_FUZZING=ON",
         "-DCMAKE_COMPILE_WARNING_AS_ERROR=ON",
